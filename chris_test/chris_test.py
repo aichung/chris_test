@@ -76,7 +76,7 @@ class Chris_test(ChrisApp):
         rotBvec = np.zeros((bvecs.shape))
 
         # If dealing with fsl's eddy output of rotations
-        if (rotFile.split('.')[-1] == 'eddy_parameters'):
+        if (instrRot.split('.')[-1] == 'eddy_parameters'):
 
             # eddy x-, y-, z- rotations (in radians) are store in columns 4-6 of this fsl edd output textfile
             # Cols 1:3 are the translations in x,y,z, 4:6 are rotations, and 7: are warp params
