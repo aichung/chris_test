@@ -121,7 +121,7 @@ class Chris_test(ChrisApp):
             rotBvec[:, i] = temp
 
         # Output and save
-        ostr='%s/%s' % (option.outputdir, option.outstr)
+        ostr='%s/%s' % (options.outputdir, options.outstr)
         np.savetxt(ostr, rotBvec, fmt='%0.7f', delimiter='\t')
 
 
